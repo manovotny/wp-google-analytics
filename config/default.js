@@ -36,7 +36,7 @@ module.exports = (function () {
             composer: 'manovotny/wp-google-analytics',
             copyright: '2014 Michael Novotny',
             description: 'PROJECT_DESCRIPTION',
-            git: 'git@github.com:manovotny/wp-google-analytics.git',
+            git: 'git://github.com/manovotny/wp-google-analytics.git',
             name: 'WP Google Analytics',
             package: 'WP_Google_Analytics',
             slug: 'wp-google-analytics',

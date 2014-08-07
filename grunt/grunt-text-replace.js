@@ -6,18 +6,20 @@ module.exports = function (grunt) {
         overwrite = true,
         previous = {
             author: {
-                email: 'AUTHOR_EMAIL',
-                name: 'AUTHOR_NAME',
-                url: 'AUTHOR_URL'
+                email: 'manovotny@gmail.com',
+                name: 'Michael Novotny',
+                url: 'http://manovotny.com'
             },
             project: {
-                copyright: 'PROJECT_COPYRIGHT',
+                composer: 'PROJECT_COMPOSER',
+                copyright: '2014 Michael Novotny',
                 description: 'PROJECT_DESCRIPTION',
-                name: 'PROJECT_NAME',
-                package: 'PROJECT_PACKAGE',
-                repository: 'PROJECT_REPOSITORY',
-                slug: 'PROJECT_SLUG',
-                version: 'PROJECT_VERSION'
+                git: 'git://github.com/manovotny/wp-google-analytics.git',
+                name: 'WP Google Analytics',
+                package: 'WP_Google_Analytics',
+                slug: 'wp-google-analytics',
+                url: 'https://github.com/manovotny/wp-google-analytics',
+                version: '0.0.0'
             }
         };
 
@@ -88,8 +90,8 @@ module.exports = function (grunt) {
             overwrite: overwrite,
             replacements: [
                 {
-                    from: '"name": "manovotny/' + previous.project.composer + '"',
-                    to: '"name": "manovotny/' + config.project.composer + '"'
+                    from: '"name": "' + previous.project.composer + '"',
+                    to: '"name": "' + config.project.composer + '"'
                 }
             ]
         },
@@ -153,8 +155,8 @@ module.exports = function (grunt) {
             overwrite: overwrite,
             replacements: [
                 {
-                    from: 'Plugin Name: ' + previous.name,
-                    to: 'Plugin Name: ' + config.name
+                    from: 'Plugin Name: ' + previous.project.name,
+                    to: 'Plugin Name: ' + config.project.name
                 }
             ]
         },
@@ -165,8 +167,8 @@ module.exports = function (grunt) {
             overwrite: overwrite,
             replacements: [
                 {
-                    from: '@package ' + previous.package,
-                    to: '@package ' + config.package
+                    from: '@package ' + previous.project.package,
+                    to: '@package ' + config.project.package
                 }
             ]
         },

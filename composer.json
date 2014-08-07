@@ -1,9 +1,9 @@
 {
-  "name": "PROJECT_COMPOSER",
-  "version": "PROJECT_VERSION",
+  "name": "manovotny/wp-google-analytics",
+  "version": "0.0.0",
   "description": "PROJECT_DESCRIPTION",
   "type": "library",
-  "homepage": "PROJECT_URL",
+  "homepage": "https://github.com/manovotny/wp-google-analytics",
   "license": "GPL-3.0+",
   "require": {
     "phpunit/phpunit": "4.1.*"

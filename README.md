@@ -1,4 +1,4 @@
-PROJECT_SLUG
+wp-google-analytics
 ===
 
 PROJECT_DESCRIPTION

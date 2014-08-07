@@ -1,11 +1,11 @@
 {
-  "name": "PROJECT_SLUG",
-  "version": "PROJECT_VERSION",
+  "name": "wp-google-analytics",
+  "version": "0.0.0",
   "description": "PROJECT_DESCRIPTION",
-  "author": "AUTHOR_NAME <AUTHOR_URL>",
+  "author": "Michael Novotny <http://manovotny.com>",
   "repository": {
     "type": "git",
-    "url": "PROJECT_GIT"
+    "url": "git://github.com/manovotny/wp-google-analytics.git"
   },
   "devDependencies": {
     "config": "~0.4.36",
