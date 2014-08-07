@@ -1,0 +1,29 @@
+{
+  "name": "PROJECT_SLUG",
+  "version": "PROJECT_VERSION",
+  "description": "PROJECT_DESCRIPTION",
+  "author": "AUTHOR_NAME <AUTHOR_URL>",
+  "repository": {
+    "type": "git",
+    "url": "PROJECT_GIT"
+  },
+  "devDependencies": {
+    "config": "~0.4.36",
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.10.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-jslint": "~1.1.12",
+    "grunt-phplint": "0.0.5",
+    "grunt-phpunit": "~0.3.3",
+    "grunt-sass": "~0.14.0",
+    "grunt-scss-lint": "~0.1.12",
+    "grunt-shell": "~0.7.0",
+    "grunt-text-replace": "~0.3.12",
+    "load-grunt-config": "~0.10.0",
+    "time-grunt": "~0.3.2"
+  }
+}

@@ -1,0 +1,34 @@
+default:
+  - build
+
+build:
+  - lib
+  - tests
+  - php
+  - js
+
+config:
+  - replace
+
+css:
+  - clean:css
+  - scsslint
+  - sass
+  - cssmin
+
+js:
+  - jslint
+
+lib:
+  - clean:lib
+  - copy
+
+php:
+  - phplint
+
+tests:
+  - phpunit
+
+#manual:
+#  - shell
+#  - watch
