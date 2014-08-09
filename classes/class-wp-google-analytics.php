@@ -75,7 +75,7 @@ class WP_Google_Analytics {
      *
      * @var string
      */
-    protected $version = '1.0.0';
+    protected $version = '2.0.0';
 
     /**
      * Getter method for version.
