@@ -56,6 +56,17 @@ class WP_Google_Analytics {
 
     }
 
+    /**
+     * Setter method for tracking id.
+     *
+     * @param string $tracking_id Google Analytics tracking id.
+     */
+    public function set_tracking_id( $tracking_id ) {
+
+        $this->tracking_id = $tracking_id;
+
+    }
+
     /* Version
     ---------------------------------------------- */
 
@@ -76,17 +87,4 @@ class WP_Google_Analytics {
         return $this->version;
 
     }
-
-    /* Constructor
-    ---------------------------------------------------------------------------------- */
-
-    /**
-     * Initializes class.
-     */
-    public function __construct( $tracking_id = '' ) {
-
-        $this->tracking_id = $tracking_id;
-
-    }
-
 }

@@ -38,7 +38,7 @@ if ( ! class_exists( 'WP_Google_Analytics' ) ) {
 
 }
 
-/* Admin
+/* Includes
 ---------------------------------------------------------------------------------- */
 
-require_once __DIR__ . '/admin/inc/google-analytics-tracking-code.php';
+require_once __DIR__ . '/inc/google-analytics-tracking-code.php';
