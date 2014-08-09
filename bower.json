@@ -1,7 +1,7 @@
 {
   "name": "wp-google-analytics",
   "version": "0.0.0",
-  "description": "PROJECT_DESCRIPTION",
+  "description": "Adds Google Analytics to WordPress sites.",
   "repository": {
     "type": "git",
     "url": "git://github.com/manovotny/wp-google-analytics.git"

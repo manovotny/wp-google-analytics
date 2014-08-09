@@ -1,4 +1,4 @@
 wp-google-analytics
 ===
 
-PROJECT_DESCRIPTION
+Adds Google Analytics to WordPress sites.

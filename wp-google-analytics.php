@@ -1,6 +1,6 @@
 <?php
 /**
- * PROJECT_DESCRIPTION
+ * Adds Google Analytics to WordPress sites.
  *
  * @package WP_Google_Analytics
  * @author Michael Novotny <manovotny@gmail.com>
@@ -11,7 +11,7 @@
  * @wordpress-plugin
  * Plugin Name: WP Google Analytics
  * Plugin URI: https://github.com/manovotny/wp-google-analytics
- * Description: PROJECT_DESCRIPTION
+ * Description: Adds Google Analytics to WordPress sites.
  * Version: 0.0.0
  * Author: Michael Novotny
  * Author URI: AUTHOR_URL
