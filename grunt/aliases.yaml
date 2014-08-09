@@ -3,18 +3,11 @@ default:
 
 build:
   - lib
-  - tests
   - php
   - js
 
 config:
   - replace
-
-css:
-  - clean:css
-  - scsslint
-  - sass
-  - cssmin
 
 js:
   - jslint
@@ -25,9 +18,6 @@ lib:
 
 php:
   - phplint
-
-tests:
-  - phpunit
 
 #manual:
 #  - shell
