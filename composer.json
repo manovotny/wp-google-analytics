@@ -1,6 +1,6 @@
 {
   "name": "manovotny/wp-google-analytics",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Adds Google Analytics to WordPress sites.",
   "type": "library",
   "homepage": "https://github.com/manovotny/wp-google-analytics",

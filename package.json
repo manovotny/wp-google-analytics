@@ -1,6 +1,6 @@
 {
   "name": "wp-google-analytics",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Adds Google Analytics to WordPress sites.",
   "author": "Michael Novotny <http://manovotny.com>",
   "repository": {
