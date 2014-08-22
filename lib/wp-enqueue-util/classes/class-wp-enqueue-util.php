@@ -39,6 +39,11 @@ class WP_Enqueue_Util {
     ---------------------------------------------------------------------------------- */
 
     /**
+     * A convenience function for enqueuing scripts.
+     *
+     * Will automatically enqueue concat or minified source, depending on debug configuration.
+     * Will automatically add localization if name and data are provided.
+     *
      * @param WP_Enqueue_Options $options Options to enqueue script with.
      */
     public function enqueue_script( WP_Enqueue_Options $options ) {
@@ -57,9 +62,9 @@ class WP_Enqueue_Util {
         $localization_name = $options->get_localization_name();
         $data = $options->get_data();
 
-        if ( ! $options->are_valid() ) {
+        if ( ! $options->have_required_properties() ) {
 
-            trigger_error( 'Trying to enqueue script, but required information is missing.' );
+            trigger_error( 'Trying to enqueue script, but required properties are missing.' );
 
             return;
 

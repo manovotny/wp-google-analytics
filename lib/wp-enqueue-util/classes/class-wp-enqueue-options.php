@@ -170,6 +170,22 @@ class WP_Enqueue_Options {
 
     }
 
+    /* Localization
+    ---------------------------------------------- */
+
+    /**
+     * Convenience accessor for setting all localization properties.
+     *
+     * @param string $localization_name The global localization name to use in JavaScript.
+     * @param mixed $data The data to pass to JavaScript.
+     */
+    public function set_localization( $localization_name, $data ) {
+
+        $this->localization_name = $localization_name;
+        $this->data = $data;
+
+    }
+
     /* Localization Name
     ---------------------------------------------- */
 
@@ -272,11 +288,12 @@ class WP_Enqueue_Options {
     /**
      * Initialize class.
      */
-    function __construct( $handle, $relative_path, $filename, $dependencies = array(), $version = '' ) {
+    function __construct( $handle, $relative_path, $filename, $filename_debug, $dependencies = array(), $version = '' ) {
 
         $this->handle = $handle;
         $this->relative_path = $relative_path;
         $this->filename = $filename;
+        $this->filename_debug = $filename_debug;
         $this->dependencies = $dependencies;
         $this->version = $version;
 
@@ -285,7 +302,12 @@ class WP_Enqueue_Options {
     /* Helpers
     ---------------------------------------------------------------------------------- */
 
-    public function are_valid() {
+    /**
+     * Determines if the enqueued options have required properties.
+     *
+     * @return boolean If the enqueued options have required properties.
+     */
+    public function have_required_properties() {
 
         return (
             ! empty( $this->handle )

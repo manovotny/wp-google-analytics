@@ -120,13 +120,12 @@ class WP_Google_Analytics {
             $handle,
             $relative_path,
             $filename,
+            $filename_debug,
             $dependencies,
             $this->version
         );
 
-        $options->set_filename_debug( $filename_debug );
-        $options->set_localization_name( $this->get_localization_handle() );
-        $options->set_data( $data );
+        $options->set_localization( $this->get_localization_handle(),  $data );
 
         $wp_enqueue_util->enqueue_script( $options );
 
