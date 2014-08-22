@@ -12,8 +12,9 @@ module.exports = function (grunt) {
     options = JSON.parse(grunt.file.read(jshintrc));
 
     // Add Browserify globals.
-    options.globals.require = false;
+    options.globals.global = false;
     options.globals.module = false;
+    options.globals.require = false;
 
     // Add ignores.
     options.ignores = [

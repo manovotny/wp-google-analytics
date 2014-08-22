@@ -8,4 +8,4 @@
         trackingId: trackingId
     };
 
-}(this));
+}(global));
