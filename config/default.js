@@ -47,7 +47,7 @@ module.exports = (function () {
             slug: 'wp-google-analytics',
             type: 'plugin', // Should be `plugin` or `theme`.
             url: 'https://github.com/manovotny/wp-google-analytics',
-            version: '2.0.1'
+            version: '3.0.0'
         }
     };
 

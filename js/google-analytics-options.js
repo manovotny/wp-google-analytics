@@ -1,11 +1,11 @@
-(function () {
+(function (global) {
 
     'use strict';
 
-    var trackingId = wp_google_analytics.options.trackingId;
+    var trackingId = global.wp_google_analytics.options.trackingId;
 
     module.exports = {
         trackingId: trackingId
     };
 
-}());
+}(this));

@@ -1,6 +1,6 @@
 {
   "name": "wp-google-analytics",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Add Google Analytics to WordPress sites.",
   "author": "Michael Novotny <http://manovotny.com>",
   "repository": {
@@ -25,6 +25,7 @@
     "grunt-wp-i18n": "~0.4.7",
     "load-grunt-config": "~0.13.1",
     "time-grunt": "~1.0.0",
-    "uglifyify": "~2.5.0"
+    "uglifyify": "~2.5.0",
+    "jshint-stylish": "~0.4.0"
   }
 }
