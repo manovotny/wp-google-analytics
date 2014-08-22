@@ -1,24 +1,36 @@
 default:
   - build
 
-build:
-  - lib
-  - php
-  - js
-
 config:
   - replace
+  - rename
 
-js:
-  - jslint
+build:
+  - clean:js
+  - browserify:admin
+  - browserify:site
 
-lib:
+generate:
+  - makepot
+  - browserify
+
+update:
   - clean:lib
+  - shell:update
   - copy
+  - curl
 
-php:
+lint:
+  - jshint
+  - jslint
   - phplint
 
-#manual:
-#  - shell
-#  - watch
+test:
+  - phpunit
+
+release:
+  - lint
+  - test
+  - build
+  - generate
+  - replace:project_version
