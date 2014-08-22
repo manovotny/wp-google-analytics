@@ -11,7 +11,7 @@ module.exports = (function () {
         project: {
             composer: 'manovotny/wp-google-analytics',
             copyright: '2014 Michael Novotny',
-            description: 'Adds Google Analytics to WordPress sites.',
+            description: 'Add Google Analytics to WordPress sites.',
             git: 'git://github.com/manovotny/wp-google-analytics.git',
             name: 'WP Google Analytics',
             package: 'WP_Google_Analytics',
