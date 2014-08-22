@@ -43,7 +43,7 @@ class WP_Google_Analytics {
      *
      * @return string Localization handle.
      */
-    public function get_localization_handle() {
+    private function get_localization_handle() {
 
         return str_replace( '-', '_', $this->slug );
 
@@ -84,6 +84,9 @@ class WP_Google_Analytics {
     /* Methods
     ---------------------------------------------------------------------------------- */
 
+    /**
+     * Enqueues scripts.
+     */
     public function enqueue_scripts() {
 
         $wp_enqueue_util = WP_Enqueue_Util::get_instance();
