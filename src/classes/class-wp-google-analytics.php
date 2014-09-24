@@ -67,7 +67,7 @@ class WP_Google_Analytics {
      *
      * @var string
      */
-    protected $version = '3.0.0';
+    protected $version = '3.1.0';
 
     /* Constructor
     ---------------------------------------------------------------------------------- */
@@ -92,7 +92,7 @@ class WP_Google_Analytics {
         $wp_enqueue_util = WP_Enqueue_Util::get_instance();
 
         $handle = $this->slug . '-script';
-        $relative_path = __DIR__ . '/../js/';
+        $relative_path = __DIR__ . '/../site/js/';
         $filename = 'bundle.min.js';
         $filename_debug = 'bundle.concat.js';
         $dependencies = array();

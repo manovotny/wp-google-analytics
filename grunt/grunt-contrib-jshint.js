@@ -5,21 +5,22 @@ module.exports = function (grunt) {
     var config = require('config'),
         stylish = require('jshint-stylish'),
 
-        jshintrc = config.paths.config + '/' + config.files.jshint,
+        jshintrc = config.paths.curl + '/.jshintrc', // .jshintrc file from WordPress core.
         options;
 
-    // Read .jshintrc file from WordPress core.
-    options = JSON.parse(grunt.file.read(jshintrc));
+    if (grunt.file.exists(jshintrc)) {
+        options = grunt.file.readJSON(jshintrc);
+    } else {
+        options = {};
+    }
 
-    // Enable Node.
+    // Enable additional options.
     options.node = true;
+    options.noempty = true;
 
     // Add ignores.
     options.ignores = [
-        config.paths.admin + '/' + config.paths.js + '/**/*.concat.js',
-        config.paths.admin + '/' + config.paths.js + '/**/*.min.js',
-        config.paths.js + '/**/*.concat.js',
-        config.paths.js + '/**/*.min.js'
+        config.paths.source + '/**/' + config.files.browserify + '.*.js'
     ];
 
     // Add reporter.
@@ -29,8 +30,19 @@ module.exports = function (grunt) {
         options: options,
         js: {
             src: [
-                config.paths.admin + '/' + config.paths.js + '/**/*.js',
-                config.paths.js + '/**/*.js'
+                '*.js',
+                'config/*.js',
+                'grunt/*.js',
+
+                config.paths.source + '/**/*.js'
+            ]
+        },
+        json: {
+            options: {
+                quotmark: 'double'
+            },
+            src: [
+                '*.json'
             ]
         }
     });
