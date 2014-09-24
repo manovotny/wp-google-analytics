@@ -1,22 +1,22 @@
 {
-  "name": "wp-google-analytics",
-  "version": "3.0.0",
-  "description": "Add Google Analytics to WordPress sites.",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/manovotny/wp-google-analytics.git"
-  },
-  "keywords": [
-    "analytics",
-    "google",
-    "google analytics",
-    "wordpress"
-  ],
-  "authors": [
-    {
-      "name": "Michael Novotny",
-      "email": "manovotny@gmail.com",
-      "homepage": "http://manovotny.com"
-    }
-  ]
+    "name": "wp-google-analytics",
+    "version": "3.0.0",
+    "description": "Add Google Analytics to WordPress sites.",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/manovotny/wp-google-analytics.git"
+    },
+    "keywords": [
+        "analytics",
+        "google",
+        "google analytics",
+        "wordpress"
+    ],
+    "authors": [
+        {
+            "name": "Michael Novotny",
+            "email": "manovotny@gmail.com",
+            "homepage": "http://manovotny.com"
+        }
+    ]
 }

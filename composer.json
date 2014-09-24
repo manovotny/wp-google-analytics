@@ -1,13 +1,13 @@
 {
-  "name": "manovotny/wp-google-analytics",
-  "version": "3.0.0",
-  "description": "Add Google Analytics to WordPress sites.",
-  "type": "library",
-  "homepage": "https://github.com/manovotny/wp-google-analytics",
-  "license": "GPL-3.0+",
-  "require": {
-    "manovotny/wp-enqueue-util": "0.2.0",
-    "manovotny/wp-phpunit-helpers": "0.1.0",
-    "phpunit/phpunit": "4.1.*"
-  }
+    "name": "manovotny/wp-google-analytics",
+    "version": "3.0.0",
+    "description": "Add Google Analytics to WordPress sites.",
+    "type": "library",
+    "homepage": "https://github.com/manovotny/wp-google-analytics",
+    "license": "GPL-3.0+",
+    "require": {
+        "manovotny/wp-enqueue-util": "0.2.0",
+        "manovotny/wp-phpunit-helpers": "0.1.0",
+        "phpunit/phpunit": "4.1.*"
+    }
 }
