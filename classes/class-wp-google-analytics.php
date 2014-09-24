@@ -128,7 +128,7 @@ class WP_Google_Analytics {
             $this->version
         );
 
-        $options->set_localization( $this->get_localization_handle(),  $data );
+        $options->set_localization( $this->get_localization_handle(), $data );
 
         $wp_enqueue_util->enqueue_script( $options );
 
