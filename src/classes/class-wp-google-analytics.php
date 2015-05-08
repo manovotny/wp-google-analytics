@@ -1,15 +1,9 @@
 <?php
-/**
- * @package WP_Google_Analytics
- */
 
 class WP_Google_Analytics {
 
     /* Properties
     ---------------------------------------------------------------------------------- */
-
-    /* Instance
-    ---------------------------------------------- */
 
     /**
      * Instance of the class.
@@ -19,7 +13,24 @@ class WP_Google_Analytics {
     protected static $instance = null;
 
     /**
-     * Get accessor method for instance property.
+     * Class slug.
+     *
+     * @var string
+     */
+    protected $slug = 'wp-google-analytics';
+
+    /**
+     * Version, used for cache-busting of style and script file references.
+     *
+     * @var string
+     */
+    protected $version = '3.1.1';
+
+    /* Public
+    ---------------------------------------------------------------------------------- */
+
+    /**
+     * Gets instance of class.
      *
      * @return WP_Google_Analytics Instance of the class.
      */
@@ -35,102 +46,36 @@ class WP_Google_Analytics {
 
     }
 
-    /* Localization Handle
-    ---------------------------------------------- */
-
     /**
-     * Getter method for localization handle.
+     * Gets localization handle.
      *
      * @return string Localization handle.
      */
-    private function get_localization_handle() {
+    public function get_localization_handle() {
 
         return str_replace( '-', '_', $this->slug );
 
     }
 
-    /* Slug
-    ---------------------------------------------- */
-
     /**
-     * Google analytics slug.
+     * Gets slug.
      *
-     * @var string
+     * @return string Slug.
      */
-    protected $slug = 'wp-google-analytics';
+    public function get_slug() {
 
-    /* Version
-    ---------------------------------------------- */
-
-    /**
-     * Version, used for cache-busting of style and script file references.
-     *
-     * @var string
-     */
-    protected $version = '3.1.1';
-
-    /* Constructor
-    ---------------------------------------------------------------------------------- */
-
-    /**
-     * Initialize class.
-     */
-    public function __construct() {
-
-        add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+        return $this->slug;
 
     }
 
-    /* Methods
-    ---------------------------------------------------------------------------------- */
-
     /**
-     * Enqueues scripts.
+     * Gets version.
+     *
+     * @return string Version.
      */
-    public function enqueue_scripts() {
+    public function get_version() {
 
-        $wp_enqueue_util = WP_Enqueue_Util::get_instance();
-
-        $handle = $this->slug . '-script';
-        $relative_path = __DIR__ . '/../site/js/';
-        $filename = 'bundle.min.js';
-        $filename_debug = 'bundle.concat.js';
-        $dependencies = array();
-
-        $trackingId = '';
-
-        if ( defined( 'WP_GOOGLE_ANALYTICS_TRACKING_ID' ) ) {
-
-            $trackingId = WP_GOOGLE_ANALYTICS_TRACKING_ID;
-
-        }
-
-        // Check for tracking id.
-        if ( empty( $trackingId ) ) {
-
-            // No tracking id, no need to enqueue scripts.
-            return;
-
-        }
-
-        $data = array(
-            'options' => array(
-                'trackingId' => $trackingId
-            )
-        );
-
-        $options = new WP_Enqueue_Options(
-            $handle,
-            $relative_path,
-            $filename,
-            $filename_debug,
-            $dependencies,
-            $this->version
-        );
-
-        $options->set_localization( $this->get_localization_handle(), $data );
-
-        $wp_enqueue_util->enqueue_script( $options );
+        return $this->version;
 
     }
 

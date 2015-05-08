@@ -1,3 +1,3 @@
 <?php
 
-WP_Google_Analytics::get_instance();
+WP_Google_Analytics_Enqueue_Scripts::get_instance();
