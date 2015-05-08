@@ -1,8 +1,5 @@
 <?php
 /**
- * @package WP_Google_Analytics
- *
- * @wordpress-plugin
  * Plugin Name: WP Google Analytics
  * Plugin URI: https://github.com/manovotny/wp-google-analytics
  * Description: Add Google Analytics to WordPress sites.

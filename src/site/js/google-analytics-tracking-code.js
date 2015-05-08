@@ -1,3 +1,4 @@
+// jscs: disable
 /* jshint ignore:start */
 
 // Code Google Analytics gives you to add to your page.
@@ -6,4 +7,5 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+// jscs: enable
 /* jshint ignore:end */

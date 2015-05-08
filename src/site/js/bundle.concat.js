@@ -9,10 +9,11 @@
     var options = require('./google-analytics-options');
 
     // Google Analytics settings.
-    global.ga( 'create', options.trackingId, 'auto' );
-    global.ga( 'send', 'pageview' );
+    global.ga('create', options.trackingId, 'auto');
+    global.ga('send', 'pageview');
 
 }(global));
+
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./google-analytics-options":2,"./google-analytics-tracking-code":3}],2:[function(require,module,exports){
 (function (global){
@@ -27,8 +28,10 @@
     };
 
 }(global));
+
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],3:[function(require,module,exports){
+// jscs: disable
 /* jshint ignore:start */
 
 // Code Google Analytics gives you to add to your page.
@@ -37,5 +40,7 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+// jscs: enable
 /* jshint ignore:end */
+
 },{}]},{},[1,2,3]);
