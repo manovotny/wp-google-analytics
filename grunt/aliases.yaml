@@ -49,7 +49,6 @@ js:
 
 release:
   - build
-  - makepot
   - replace:project_version
   - replace:update_project
 
