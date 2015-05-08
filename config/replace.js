@@ -16,7 +16,7 @@ module.exports = (function () {
             name: 'WP Google Analytics',
             slug: 'wp-google-analytics',
             url: 'https://github.com/manovotny/wp-google-analytics',
-            version: '3.1.1'
+            version: '4.0.0'
         },
         translations: {
             domain: 'wp-google-analytics',

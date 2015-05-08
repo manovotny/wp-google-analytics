@@ -24,7 +24,7 @@ class WP_Google_Analytics {
      *
      * @var string
      */
-    protected $version = '3.1.1';
+    protected $version = '4.0.0';
 
     /* Public
     ---------------------------------------------------------------------------------- */
